@@ -18,9 +18,30 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #808080;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #808080 ;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
         }
 
     </style>
@@ -30,8 +51,8 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -119,11 +140,50 @@
                 <td>Mato Grosso do Sul</td>
                 <td class="num">2.449.024</td>
             </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.209.558</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.581.016</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.511.459</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830.026</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">733.508</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636.303</td>
+            </tr>
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
-            <td>0000</td>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>203.062.512</strong></td>
         </tfoot>
+        <caption>População das Unidades Federativas</caption>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio magnam, dolore aliquid ea numquam ut voluptates quam incidunt veniam exercitationem, magni modi corporis delectus maxime quod. Explicabo, deleniti provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab quos error quam asperiores minus eligendi aliquam possimus ea odio alias sunt recusandae, officia incidunt blanditiis pariatur dolores. Atque, temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis iste consectetur impedit ab rem soluta illo cupiditate! Fugit architecto neque dolor pariatur quis maiores tempora explicabo necessitatibus deserunt quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto praesentium nemo doloribus sed eos repellat sequi voluptates hic aspernatur rem nesciunt, eveniet, non, obcaecati modi in maiores harum eum illum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio magnam, dolore aliquid ea numquam ut voluptates quam incidunt veniam exercitationem, magni modi corporis delectus maxime quod. Explicabo, deleniti provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab quos error quam asperiores minus eligendi aliquam possimus ea odio alias sunt recusandae, officia incidunt blanditiis pariatur dolores. Atque, temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis iste consectetur impedit ab rem soluta illo cupiditate! Fugit architecto neque dolor pariatur quis maiores tempora explicabo necessitatibus deserunt quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto praesentium nemo doloribus sed eos repellat sequi voluptates hic aspernatur rem nesciunt, eveniet, non, obcaecati modi in maiores harum eum illum!</p>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio magnam, dolore aliquid ea numquam ut voluptates quam incidunt veniam exercitationem, magni modi corporis delectus maxime quod. Explicabo, deleniti provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab quos error quam asperiores minus eligendi aliquam possimus ea odio alias sunt recusandae, officia incidunt blanditiis pariatur dolores. Atque, temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis iste consectetur impedit ab rem soluta illo cupiditate! Fugit architecto neque dolor pariatur quis maiores tempora explicabo necessitatibus deserunt quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto praesentium nemo doloribus sed eos repellat sequi voluptates hic aspernatur rem nesciunt, eveniet, non, obcaecati modi in maiores harum eum illum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio magnam, dolore aliquid ea numquam ut voluptates quam incidunt veniam exercitationem, magni modi corporis delectus maxime quod. Explicabo, deleniti provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab quos error quam asperiores minus eligendi aliquam possimus ea odio alias sunt recusandae, officia incidunt blanditiis pariatur dolores. Atque, temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis iste consectetur impedit ab rem soluta illo cupiditate! Fugit architecto neque dolor pariatur quis maiores tempora explicabo necessitatibus deserunt quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto praesentium nemo doloribus sed eos repellat sequi voluptates hic aspernatur rem nesciunt, eveniet, non, obcaecati modi in maiores harum eum illum!</p>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio magnam, dolore aliquid ea numquam ut voluptates quam incidunt veniam exercitationem, magni modi corporis delectus maxime quod. Explicabo, deleniti provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab quos error quam asperiores minus eligendi aliquam possimus ea odio alias sunt recusandae, officia incidunt blanditiis pariatur dolores. Atque, temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis iste consectetur impedit ab rem soluta illo cupiditate! Fugit architecto neque dolor pariatur quis maiores tempora explicabo necessitatibus deserunt quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto praesentium nemo doloribus sed eos repellat sequi voluptates hic aspernatur rem nesciunt, eveniet, non, obcaecati modi in maiores harum eum illum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio magnam, dolore aliquid ea numquam ut voluptates quam incidunt veniam exercitationem, magni modi corporis delectus maxime quod. Explicabo, deleniti provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab quos error quam asperiores minus eligendi aliquam possimus ea odio alias sunt recusandae, officia incidunt blanditiis pariatur dolores. Atque, temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis iste consectetur impedit ab rem soluta illo cupiditate! Fugit architecto neque dolor pariatur quis maiores tempora explicabo necessitatibus deserunt quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto praesentium nemo doloribus sed eos repellat sequi voluptates hic aspernatur rem nesciunt, eveniet, non, obcaecati modi in maiores harum eum illum!</p>
+   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, distinctio magnam, dolore aliquid ea numquam ut voluptates quam incidunt veniam exercitationem, magni modi corporis delectus maxime quod. Explicabo, deleniti provident! Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab quos error quam asperiores minus eligendi aliquam possimus ea odio alias sunt recusandae, officia incidunt blanditiis pariatur dolores. Atque, temporibus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum perferendis iste consectetur impedit ab rem soluta illo cupiditate! Fugit architecto neque dolor pariatur quis maiores tempora explicabo necessitatibus deserunt quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto praesentium nemo doloribus sed eos repellat sequi voluptates hic aspernatur rem nesciunt, eveniet, non, obcaecati modi in maiores harum eum illum!</p>
+   
+   
+   
+   
 </body>
 </html>
