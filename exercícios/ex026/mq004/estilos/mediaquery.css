@@ -24,8 +24,13 @@ Grandes telas: acima de 1200px
 
     main {
         border: 2px solid black;
+        width: 90vw;
     }
-    
+
+    main::after {
+        content: "Essa impressão foi feita a partir do site x";
+        text-decoration: overline;
+    }
     main h1 {
         text-shadow: none;
         color: black;
